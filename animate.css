@@ -1,0 +1,64 @@
+   #header-title {
+        -webkit-animation:colorchange 5s infinite alternate;
+    }
+    
+    @-webkit-keyframes colorchange {
+        0% {
+        
+          color:#fff;
+        }
+      
+        10% {
+        
+            color:#FF0000;
+        }
+      
+        20% {
+        
+            color: #008000;
+        }
+      
+        30% {
+        
+            color:#00ff00;
+        }
+      
+        40% {
+        
+            color:#FF00FF;
+        }
+      
+        50% {
+        
+            color:#FFFF00;
+        }
+      
+        60% {
+        
+            color:#000000;
+        }
+      
+        70% {
+        
+            color:#800080;
+        }
+        
+        80% {
+     
+            color:#800000;
+        }
+      
+        90% {
+     
+            color:#ff4500;
+        }
+      
+        100% {
+        
+            color:pink;
+        }
+    }
+    
+    
+    
+    
