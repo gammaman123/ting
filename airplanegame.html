@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Airplane Game!</title>
+		<style>
+			#container {
+            height:680px;
+            width:1350px;
+			outline:5px solid black;
+			position:relative;
+			background-size: 100% 100%;
+			background-image:url(https://s3.envato.com/files/175313099/primage.jpg);
+			background-repeat:no-repeat;
+			}
+			#block {
+			position:absolute;
+			height:50px;
+			width:50px;
+			outline:5px solid black;
+			left:0;
+			background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-qbMfR-TpsfV_I_KjMexjAzo1CY_zCYYb3DfxccPa8BaWsc1);
+			background-size: 50px 50px;
+			background-repeat: no-repeat;
+		</style>
+	</head>
+	
+	<body>
+			<div id = "container"><div id = "block"></div></div>
+
+	<script>
+	
+			var block =
+			document.getElementById("block");
+			var container =
+			document.getElementById("container");
+			var blockLeft = 0;
+			var y = 0;
+		//movement
+		function move(e) {
+			//left arrow & D
+			if (e.keyCode == 39) {
+			blockLeft += 2;
+			block.style.left = blockLeft + "2px";
+			    if(blockLeft>=1350){
+					blockLeft-=2;
+					}
+			}
+			else if (e.keyCode == 68) {
+			blockLeft += 2;
+			block.style.left = blockLeft + "2px";
+			    if(blockLeft>=1350){
+					blockLeft-=2;
+					}
+			}
+			//right arrow and a
+			else if (e.keyCode == 37) {
+			blockLeft -= 2;
+			block.style.left = blockLeft + "2px";
+				if(blockLeft <=0){
+					blockLeft+=2;
+					}
+			}
+			else if (e.keyCode == 65) {
+			blockLeft -= 2;
+			block.style.left = blockLeft + "2px";
+				if(blockLeft <=0){
+					blockLeft+=2;
+					}
+			}
+			//up arrow & w
+			else if (e.keyCode == 40) {
+			y += 2;
+			block.style.top = y + "2px";
+			    if(y<=0){
+					y+=2;
+				}
+			}
+			else if (e.keyCode == 83) {
+			y += 2;
+			block.style.top = y + "2px";
+			}
+			    if(y<=0){
+					y+=2;
+				}
+			//down arrow & s
+			else if (e.keyCode == 38) {
+			y -= 2;
+			block.style.top = y + "2px";
+			    if(y>=680){
+			        y+=2;
+			    }
+			}
+			else if (e.keyCode == 87) {
+			y -= 2;
+			block.style.top = y + "2px";
+			    if(y>=680){
+			        y+=2;
+			    }
+			}
+			}
+			
+			document.onkeydown = move;
+			
+	</script>
+		
+	</body>
+	
+</html>
+
