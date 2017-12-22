@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+        <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color="blue">
+                <a-animation
+                    attribute="material.color"
+                    repeat="indefinate"
+                    from="blue"
+                    to="pink"
+                    dur="4000"
+                    direction="alternate">
+                </a-animation>
+            </a-sky>
+                <a-entity camera="userHeight: 2.5" look-controls wasd-controls="acceleration: 250">
+                    <a-cursor color="black"></a-cursor>
+                </a-entity>
+            <!--SHAPES-->
+                    <a-box position="0 9 -5" height="6" width="6" depth="6" color="red">
+                        <a-animation
+                            end="click"
+                            attribute="rotation"
+                            from="20 0 0"
+                            to="20 360 0"
+                            direction="alternate"
+                            dur="4000"
+                            repeat="indefinite"
+                            easing="ease">
+                        </a-animation>
+                        <a-animation
+                            attribute="material.color"
+                            repeat="indefinate"
+                            from="red"
+                            to="yellow"
+                            dur="2000"
+                            easing="ease"
+                            direction="alternate">
+                        </a-animation>
+                    </a-box>
+        <!--START OF CONES-->
+            <a-cone position="-3 0 0" height="4" width="5" depth="8" color="green" >
+                <a-animation
+                    end="click"
+                    attribute="position"
+                    from="-3 0 0"
+                    to="-10 0 7"
+                    direction="alternate"
+                    repeat="indefinate"
+                    dur="4000"
+                    easing="ease">
+                </a-animation>
+                <a-animation
+                    attribute="material.color"
+                    repeat="indefinate"
+                    from="green"
+                    to="white"
+                    easing="ease"
+                    direction="alternate">
+                </a-animation>
+            </a-cone>
+            <a-cone position="3 0 0" height="4" width="5" depth="8" color="green" >
+                <a-animation
+                    end="click"
+                    attribute="position"
+                    from="3 0 0"
+                    to="10 0 7"
+                    direction="alternate"
+                    repeat="indefinate"
+                    dur="4000"
+                    easing="ease">
+                </a-animation>
+                <a-animation
+                    attribute="material.color"
+                    repeat="indefinate"
+                    from="green"
+                    to="white"
+                    easing="ease"
+                    direction="alternate">
+                </a-animation>
+            </a-cone>
+            <a-cone position="-6 0 -6" height="4" width="5" depth="8" color="green" >
+                <a-animation
+                    end="click"
+                    attribute="position"
+                    from="-6 0 -6"
+                    to="-13 0 -13"
+                    direction="alternate"
+                    repeat="indefinate"
+                    dur="4000"
+                    easing="ease">
+                </a-animation>
+                <a-animation
+                    attribute="material.color"
+                    repeat="indefinate"
+                    from="green"
+                    to="white"
+                    easing="ease"
+                    direction="alternate">
+                </a-animation>
+            </a-cone>
+            <a-cone position="0 0 -9" height="4" width="5" depth="8" color="green" >
+                <a-animation
+                    end="click"
+                    attribute="position"
+                    from="0 0 -9"
+                    to="7 0 -16"
+                    direction="alternate"
+                    repeat="indefinate"
+                    dur="4000"
+                    easing="ease">
+                </a-animation>
+                <a-animation
+                    attribute="material.color"
+                    repeat="indefinate"
+                    from="green"
+                    to="white"
+                    easing="ease"
+                    direction="alternate">
+                </a-animation>
+            </a-cone>
+        <!--END OF CONES-->
+                    <a-entity geometry="primitive: torus; width: 3; height: 3;" position="0 0 -5" color="red">
+                        <a-animation
+                            attribute="material.color"
+                            repeat="indefinate">
+                        </a-animation>
+                        <a-animation
+                            end="click"
+                            attribute="rotation"
+                            from="0 0 0"
+                            to="360 360 360"
+                            direction="alternate"
+                            dur="4000"
+                            repeat="indefinite"
+                            easing="ease">
+                        </a-animation>
+                        </a-entity>
+        </a-scene>
+    </body>
+</html>
