@@ -81,23 +81,28 @@ ul li a {
 /*INDIVIDUAL DROPDOWNS*/
 
 #gamedrop {
-    margin-left:7.5px;
+	position:absolute;
+	left:5%;
 }
 
 #programdrop {
-    margin-left:10.5px;
+    position:absolute;
+    left:20%;
 }
 
 #vrdrop {
-    margin-left:0.5px;
+    position:absolute;
+    left:35%;
 }
 
 #videodrop {
-    margin-left:9.5px;
+    position:absolute;
+    margin-left:50%;
 }
 
 #contactdrop {
-    margin-left:4.5px;
+    position:absolute;
+    left:65%;
 }
 
 #contactdrop li a {
