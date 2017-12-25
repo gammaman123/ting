@@ -28,6 +28,7 @@
 
 #navigator ul {
     float:left;
+    left:200px;
 }
 
 #navigator ul li {
