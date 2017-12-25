@@ -82,27 +82,27 @@ ul li a {
 
 #gamedrop {
 	position:absolute;
-	left:5%;
+	left:0%;
 }
 
 #programdrop {
     position:absolute;
-    left:20%;
+    left:16%;
 }
 
 #vrdrop {
     position:absolute;
-    left:35%;
+    left:32%;
 }
 
 #videodrop {
     position:absolute;
-    margin-left:50%;
+    margin-left:48%;
 }
 
 #contactdrop {
     position:absolute;
-    left:65%;
+    left:64%;
 }
 
 #contactdrop li a {
